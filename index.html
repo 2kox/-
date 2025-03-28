@@ -115,16 +115,26 @@
       bottom: 0;
     }
 
-    /* Video section styling */
-    .video-container {
+    /* Square frame for the GIFs */
+    .gif-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 30px 0;
+      align-items: center;
+      width: 80%;
+      max-width: 1000px;
+      margin: 30px auto;
+      border: 3px solid white;
+      border-radius: 15px;
+      padding: 15px;
+      background-color: #2D2C2C;
+      box-sizing: border-box;
     }
 
-    .video-frame {
+    /* Individual frames for each GIF */
+    .gif-frame {
       width: 30%;
+      height: 150px;
       margin: 10px;
       border: 2px solid white;
       border-radius: 10px;
@@ -132,10 +142,10 @@
       background-color: black;
     }
 
-    .video-frame video {
+    .gif-frame img {
       width: 100%;
-      height: auto;
-      display: block;
+      height: 100%;
+      object-fit: cover;
     }
 
     @media (max-width: 768px) {
@@ -157,7 +167,8 @@
         max-width: 80%;
       }
 
-      .video-frame {
+      /* Adjust GIF frames for smaller screens */
+      .gif-frame {
         width: 45%;
       }
     }
@@ -183,45 +194,27 @@
     </a>
   </div>
 
-  <!-- Video Section -->
-  <div class="video-container">
-    <div class="video-frame">
-      <video controls autoplay>
-        <source src="video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+  <!-- GIF Section -->
+  <div class="gif-container">
+    <div class="gif-frame">
+      <img src="gif1.gif" alt="GIF 1">
     </div>
-    <div class="video-frame">
-      <video controls autoplay>
-        <source src="video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="gif-frame">
+      <img src="gif2.gif" alt="GIF 2">
     </div>
-    <div class="video-frame">
-      <video controls autoplay>
-        <source src="video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="gif-frame">
+      <img src="gif3.gif" alt="GIF 3">
     </div>
-    <div class="video-frame">
-      <video controls autoplay>
-        <source src="video4.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="gif-frame">
+      <img src="gif4.gif" alt="GIF 4">
     </div>
-    <div class="video-frame">
-      <video controls autoplay>
-        <source src="video5.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <!-- <div class="gif-frame">
+      <img src="gif5.gif" alt="GIF 5">
     </div>
-    <div class="video-frame">
-      <video controls autoplay>
-        <source src="video6.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+    <div class="gif-frame">
+      <img src="gif6.gif" alt="GIF 6">
     </div>
-  </div>
+  </div> -->
 
   <footer>© 𝐁𝐊 𝐃𝐫𝐞𝐬𝐬𝐞𝐬</footer>
 </body>
